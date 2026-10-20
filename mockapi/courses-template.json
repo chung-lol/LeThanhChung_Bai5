@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Android Kotlin cơ bản",
+    "description": "Xây dựng ứng dụng Android với Kotlin",
+    "categoryId": "REPLACE_WITH_MOBILE_ID",
+    "instructor": "Nguyễn Văn A",
+    "price": 500000,
+    "duration": 30,
+    "thumbnail": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "React Native từ cơ bản",
+    "description": "Lập trình di động đa nền tảng",
+    "categoryId": "REPLACE_WITH_MOBILE_ID",
+    "instructor": "Trần Thị B",
+    "price": 550000,
+    "duration": 28,
+    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "Flutter UI thực chiến",
+    "description": "Thiết kế giao diện Flutter",
+    "categoryId": "REPLACE_WITH_MOBILE_ID",
+    "instructor": "Lê Văn C",
+    "price": 600000,
+    "duration": 35,
+    "thumbnail": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "HTML CSS nền tảng",
+    "description": "Xây dựng giao diện web",
+    "categoryId": "REPLACE_WITH_WEB_ID",
+    "instructor": "Phạm Văn D",
+    "price": 300000,
+    "duration": 20,
+    "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "JavaScript hiện đại",
+    "description": "ES6 và thao tác DOM",
+    "categoryId": "REPLACE_WITH_WEB_ID",
+    "instructor": "Hoàng Thị E",
+    "price": 450000,
+    "duration": 26,
+    "thumbnail": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "NodeJS REST API",
+    "description": "Xây dựng backend NodeJS",
+    "categoryId": "REPLACE_WITH_WEB_ID",
+    "instructor": "Đỗ Văn F",
+    "price": 650000,
+    "duration": 32,
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "Python cho AI",
+    "description": "Python nhập môn cho học máy",
+    "categoryId": "REPLACE_WITH_AI_ID",
+    "instructor": "Vũ Thị G",
+    "price": 400000,
+    "duration": 24,
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "Machine Learning cơ bản",
+    "description": "Các mô hình học máy phổ biến",
+    "categoryId": "REPLACE_WITH_AI_ID",
+    "instructor": "Bùi Văn H",
+    "price": 700000,
+    "duration": 40,
+    "thumbnail": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "Deep Learning với TensorFlow",
+    "description": "Mạng nơ-ron sâu",
+    "categoryId": "REPLACE_WITH_AI_ID",
+    "instructor": "Ngô Thị I",
+    "price": 800000,
+    "duration": 45,
+    "thumbnail": "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "title": "ReactJS thực hành",
+    "description": "Làm SPA với React",
+    "categoryId": "REPLACE_WITH_WEB_ID",
+    "instructor": "Đặng Văn K",
+    "price": 580000,
+    "duration": 30,
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
+    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "createdAt": "2026-10-20"
+  }
+]

@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:theme="@style/Theme.LeThanhChungBai5" android:label="Quản lý khóa học">
+        <activity android:name=".ui.category.CategoryManagementActivity" />
+        <activity android:name=".ui.course.CourseFormActivity" />
+        <activity android:name=".ui.course.CourseDetailActivity" />
+        <activity android:name=".ui.course.MainActivity" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+    </application>
+</manifest>

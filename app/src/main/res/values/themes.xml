@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.LeThanhChungBai5" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="colorPrimary">#2855AE</item>
+        <item name="colorSecondary">#087F8C</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
