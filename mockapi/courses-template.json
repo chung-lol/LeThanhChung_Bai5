@@ -7,7 +7,7 @@
     "price": 500000,
     "duration": 30,
     "thumbnail": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -18,7 +18,7 @@
     "price": 550000,
     "duration": 28,
     "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -29,7 +29,7 @@
     "price": 600000,
     "duration": 35,
     "thumbnail": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -40,7 +40,7 @@
     "price": 300000,
     "duration": 20,
     "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -51,7 +51,7 @@
     "price": 450000,
     "duration": 26,
     "thumbnail": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -62,7 +62,7 @@
     "price": 650000,
     "duration": 32,
     "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -73,7 +73,7 @@
     "price": 400000,
     "duration": 24,
     "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -84,7 +84,7 @@
     "price": 700000,
     "duration": 40,
     "thumbnail": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -95,7 +95,7 @@
     "price": 800000,
     "duration": 45,
     "thumbnail": "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   },
   {
@@ -106,7 +106,7 @@
     "price": 580000,
     "duration": 30,
     "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
-    "trailerUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    "trailerUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "createdAt": "2026-10-20"
   }
 ]

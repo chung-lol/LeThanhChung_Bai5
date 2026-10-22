@@ -1,0 +1,1 @@
+{"name":"course-management-local","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/app.js && node --check server.mjs"}}

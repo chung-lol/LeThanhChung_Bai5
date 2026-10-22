@@ -29,11 +29,14 @@ class CourseFormActivity : BaseActivity() {
         draft = savedInstanceState
         heading(if (courseId == null) "Thêm khóa học" else "Sửa khóa học")
         button("Quay lại") { finish() }
-        button("Tải lại dữ liệu") { load() }
+        button("Tải lại danh mục") {
+            if (loaded) draft = captureDraft()
+            load()
+        }
         titleField = field("Tên khóa học *")
         description = field("Mô tả *").apply { minLines = 3; inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE }
         label("Danh mục *")
-        category = Spinner(this).also { body.addView(it) }
+        category = Spinner(this).also { it.minimumHeight = dp(48); body.addView(it) }
         instructor = field("Giảng viên *")
         price = field("Học phí (VNĐ) *").apply { inputType = InputType.TYPE_CLASS_NUMBER or InputType.TYPE_NUMBER_FLAG_DECIMAL }
         duration = field("Thời lượng (giờ) *").apply { inputType = InputType.TYPE_CLASS_NUMBER }
@@ -47,24 +50,28 @@ class CourseFormActivity : BaseActivity() {
         load()
     }
     private fun fields() = listOf(titleField, description, instructor, price, duration, thumbnail, trailer, createdAt)
+    private fun captureDraft() = Bundle().apply {
+        fields().forEachIndexed { index, field -> putString("field$index", field.text.toString()) }
+        putString("category", categories.getOrNull(category.selectedItemPosition - 1)?.id)
+    }
     override fun onSaveInstanceState(outState: Bundle) {
-        fields().forEachIndexed { index, field -> outState.putString("field$index", field.text.toString()) }
-        outState.putString("category", categories.getOrNull(category.selectedItemPosition)?.id)
+        outState.putAll(draft ?: captureDraft())
         super.onSaveInstanceState(outState)
     }
     private fun load() = task {
         loaded = false
         categories = api.getCategories()
-        category.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, categories.map { it.name })
+        category.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item,
+            listOf("Chọn danh mục…") + categories.map { it.name })
         val course = courseId?.let { api.getCourse(it) }
         if (course != null && draft == null) {
             listOf(course.title, course.description, course.instructor, course.price.toString(), course.duration.toString(),
                 course.thumbnail, course.trailerUrl, course.createdAt).forEachIndexed { i, v -> fields()[i].setText(v) }
         }
         draft?.let { state -> fields().forEachIndexed { i, field -> field.setText(state.getString("field$i", field.text.toString())) } }
-        val selected = draft?.getString("category") ?: course?.categoryId
+        val selected = if (draft != null) draft?.getString("category") else course?.categoryId
         val index = categories.indexOfFirst { it.id == selected }
-        category.setSelection(if (selected == null) 0 else index)
+        category.setSelection(if (index < 0) 0 else index + 1)
         draft = null
         loaded = true
         require(categories.isNotEmpty()) { "Chưa có danh mục. Quay lại và thêm danh mục trước." }
@@ -74,7 +81,7 @@ class CourseFormActivity : BaseActivity() {
         fun EditText.value() = text.toString().trim()
         val course = Course(
             id = courseId ?: "", title = titleField.value(), description = description.value(),
-            categoryId = categories.getOrNull(category.selectedItemPosition)?.id ?: "",
+            categoryId = categories.getOrNull(category.selectedItemPosition - 1)?.id ?: "",
             instructor = instructor.value(), price = price.value().toDoubleOrNull() ?: Double.NaN,
             duration = duration.value().toIntOrNull() ?: 0, thumbnail = thumbnail.value(),
             trailerUrl = trailer.value(), createdAt = createdAt.value()
